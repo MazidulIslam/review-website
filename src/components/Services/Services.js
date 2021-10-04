@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Service from '../Service/Service';
 
 const Services = () => {
+
+    const [services, setServices] = useState([]);
+    
+    useEffect(() => {
+        fetch('./fakeData.JSON')
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, [])
     return (
-        <div style={{border : '1px solid goldenrod', padding : '200px', margin : '0px 20px'}}>
-            <h2>This  is service </h2>
+        <div>
+            {services.map = (service => <Service
+                key={services.key}
+                service={services}></Service>)}
         </div>
     );
 };

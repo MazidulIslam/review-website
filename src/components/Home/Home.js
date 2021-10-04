@@ -1,13 +1,26 @@
-import React from 'react';
+import { Grid } from '@mui/material';
+import React, { createContext} from 'react';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
 
+export const ServicesContext = createContext('');
 const Home = () => {
+
+    const serviceType = 'Our Services';
+    
+    
     return (
-        <div>
-            <Banner></Banner>
-            <Services></Services>
-        </div>
+        <ServicesContext.Provider value={[serviceType]}>
+            <div>
+                <Banner></Banner>
+                {/* <Grid container spacing={2} columns={16}>
+                    <Grid item xs={8}>  */}
+                        <Services></Services>
+                    {/* </Grid>
+                </Grid> */}
+            </div>
+        </ServicesContext.Provider>
+        
     );
 };
 

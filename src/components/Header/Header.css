@@ -1,0 +1,28 @@
+.navMenu {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  padding: 30px;
+}
+.navMenu .logo {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.navMenu .logo span {
+  color: green;
+}
+.navLink {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: black;
+  padding-top: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navLink:hover {
+  color: green;
+}

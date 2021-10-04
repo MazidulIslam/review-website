@@ -1,0 +1,14 @@
+.banner {
+  height: 400px;
+  background-image: url(../../images/banner.jpg);
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.banner .btn {
+  position: absolute;
+  left: 10%;
+  top: 42%;
+  font-size: 1.5rem;
+}

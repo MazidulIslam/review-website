@@ -1,23 +1,22 @@
 import { Grid } from '@mui/material';
 import React, { createContext} from 'react';
 import Banner from '../Banner/Banner';
+import Instructors from '../Instructors/Instructors';
 import Services from '../Services/Services';
 
 export const ServicesContext = createContext('');
 const Home = () => {
 
     const serviceType = 'Our Services';
+    const instructor = 'Our Instructors';
     
     
     return (
-        <ServicesContext.Provider value={[serviceType]}>
+        <ServicesContext.Provider value={[serviceType, instructor]}>
             <div>
                 <Banner></Banner>
-                {/* <Grid container spacing={2} columns={16}>
-                    <Grid item xs={8}>  */}
-                        <Services></Services>
-                    {/* </Grid>
-                </Grid> */}
+                <Services></Services>
+                <Instructors></Instructors>
             </div>
         </ServicesContext.Provider>
         

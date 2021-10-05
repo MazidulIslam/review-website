@@ -17,12 +17,12 @@ const Services = () => {
             <h1 style={{color: 'green', padding: '10px'}}>{serviceType}</h1>
 
             <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 16 }}>
-                    {
+                {
                     services.map(service => <Service
                         key={service.key}
-                        service={service}></Service>)
-                    }
-                </Grid>
+                        service={service}></Service>)    
+                }    
+            </Grid>
         
         </div>
     );

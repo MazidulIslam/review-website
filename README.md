@@ -1,6 +1,6 @@
 # eLearning-A Complete Online Courses Solution
 
-[eLearning](https://keen-ramanujan-4ce986.netlify.app/home)
+[eLearning](https://elearning-mazid.netlify.app/)
 
 - People can find their desired courses
 
